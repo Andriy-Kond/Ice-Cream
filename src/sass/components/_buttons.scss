@@ -1,3 +1,29 @@
 /* === BUTTONS === */
+.btn {
+    width: 150px;
+    height: 42px;
+    padding: 12;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.214285714285714;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 10px;
+    background: #F8D24E;
+    color: $text-simple-dark-color;
+    border: 0;
+}
+
+// .btn::after {
+//     content: "";
+//     width: 5px;
+//     height: 10px;
+//     margin-left: 16px;
+//     background-image: url("../../images/svgs/arrow-angle.png");
+// }
+
+
 
 /* === /BUTTONS === */

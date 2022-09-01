@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    padding-top: 16px;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    margin-left: 268px;
+    padding: 23px 0;
+}
+
+.menu__item {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $text-light-color;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 27px;
+}
+
+.btn__header {
+    margin-left: 146px;
+}
