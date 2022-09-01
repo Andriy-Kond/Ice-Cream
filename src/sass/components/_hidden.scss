@@ -1,0 +1,20 @@
+/* === HIDDEN === */
+.hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+// Новий варіант (потребує перевірки на різних платформах)
+/* .visually-hidden {
+    position: fixed;
+    transform: scale(0);
+} */
+/* === /HIDDEN === */
