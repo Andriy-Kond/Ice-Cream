@@ -1,3 +1,39 @@
-@import './common';
-@import './example';
-@import "./header";
+// todo автофокус на полі у подалці - через JS
+// todo закріпити хедер при прокрутці
+
+// Змінні
+@import './utils/variables';
+@import './utils/breakpoints';
+
+// Нормалізація стилів
+@import './base/modern-normalize';
+@import './base/project-normalize';
+
+// Загальні компоненти
+@import './components/hidden';
+@import './components/buttons';
+@import './components/container';
+@import './components/section';
+@import './components/logo';
+@import './components/socials';
+
+// Капелюх
+@import './layout/header';
+
+// Головна сторінка
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/reviews';
+@import './layout/contacts';
+
+// Нижній колонтитул
+@import './layout/footer';
+
+// Модальны вікна
+@import './layout/modal-buy';
+@import './layout/modal-made';
+@import './layout/modal-locations';
+@import './layout/modal-franchise';
