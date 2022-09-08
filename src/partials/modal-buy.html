@@ -1,3 +1,65 @@
-<section class="section">
-  <div class="container"></div>
-</section>
+<div class="backdrop is-hidden" data-modal-buy>
+  <div class="modal-buy">
+    <h2 class="modal-buy__title">Buy now</h2>
+
+    <ul class="buy__list">
+      <li class="buy__item">
+        <h3 class="buy__title">ice cream</h3>
+      </li>
+      <li class="buy__item">
+        <h3 class="buy__title">ice coffee</h3>
+      </li>
+      <li class="buy__item">
+        <h3 class="buy__title">milkshakes</h3>
+      </li>
+    </ul>
+
+    <form action="" class="buy-form">
+      <ul class="buy-form__list">
+        <li class="buy-form__item">
+          <label>
+            <input
+              type="text"
+              name="user_name"
+              class="buy-form__input"
+              required
+              pattern="[a-zA-Zа-яА-ЯїЇіІ]+$"
+              minlength="2"
+              placeholder="Name"
+            />
+          </label>
+        </li>
+        <li class="buy-form__item">
+          <label>
+            <input
+              type="tel"
+              name="user_phone_number"
+              class="buy-form__input"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx"
+              placeholder="Phone"
+            />
+          </label>
+        </li>
+        <li class="buy-form__item">
+          <label>
+            <textarea
+              name="user__message"
+              class="buy-form__message"
+              placeholder="Comment"
+            ></textarea>
+          </label>
+        </li>
+      </ul>
+
+      <button type="submit" class="buy-form__submit">Submit</button>
+    </form>
+    <button type="button" class="modal-buy__close-btn" data-modal-buy-close>
+      <svg class="modal-buy__icon" width="20" height="20">
+        <!-- <use href="./images/icons.svg#icon-close-btn"></use> -->
+        <use href="./images/icons.svg#btn-close-modal"></use>
+      </svg>
+    </button>
+  </div>
+</div>

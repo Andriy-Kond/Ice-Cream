@@ -1,0 +1,376 @@
+.hero {
+  position: relative;
+
+  width: 100%;
+  padding-top: 61px;
+
+  // padding-left: 20px;
+  // padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+    margin: 0 auto;
+  }
+
+  @media screen and(min-width:$tablet) {
+    width: 768px;
+    // padding-left: 32px;
+    // padding-right: 32px;
+
+    padding-top: 28px;
+    padding-bottom: 13px;
+  }
+
+  @media screen and(min-width:$desctop) {
+    width: 1200px;
+    padding-top: 40px;
+    padding-bottom: 58px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.main-title-wrapper {
+  @media screen and(min-width:$tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main-title-inner {
+  @media screen and(max-width:767px) {
+    max-width: 250px;
+  }
+
+  @media screen and(min-width:$tablet) {
+    max-width: 181px;
+  }
+
+  @media screen and(min-width:$desctop) {
+    max-width: 367px;
+  }
+}
+
+.main-title {
+  font-family: $font-title;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $text-light-color;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 1.28;
+  }
+
+  @media screen and (min-width: $desctop) {
+    font-size: 38px;
+    line-height: 1.26;
+  }
+}
+
+//<span> passion </span>
+.main-title__accent {
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+    line-height: 0.97;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 0.54;
+  }
+
+  @media screen and (min-width: $desctop) {
+    font-size: 38px;
+    line-height: 1.26;
+  }
+}
+
+.hero-btn-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  @media screen and(max-width:767px) {
+    margin-top: 32px;
+  }
+
+  @media screen and(min-width:$tablet) {
+    margin-top: 20px;
+  }
+
+  @media screen and(min-width:$desctop) {
+    margin-top: 28px;
+    gap: 12px;
+  }
+}
+
+.btn-border_m {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 62px;
+  height: 24px;
+
+  font-family: $font-second;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.13;
+
+  color: $text-simple-dark-color;
+
+  border: 2px solid $brand-second-color;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  @media screen and(min-width:$desctop) {
+    width: 134px;
+    height: 42px;
+
+    font-family: $font-main;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  &:hover {
+    border-color: $focus-color;
+  }
+  &:focus {
+    border-color: $focus-color;
+    color: $text-light-color;
+  }
+  &:disabled {
+    border-color: $disabled-color;
+  }
+}
+
+.btn-underline_m {
+  width: 83px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  font-family: $font-main;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+
+  color: $brand-second-color;
+
+  cursor: pointer;
+  text-decoration-line: underline;
+
+  @media screen and(min-width:$desctop) {
+    width: 152px;
+    height: 42px;
+
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  &:hover {
+    color: $focus-color;
+  }
+  &:focus {
+    color: $text-light-color;
+  }
+  &:disabled {
+    color: $disabled-color;
+  }
+}
+
+.trade-network {
+  @media screen and(max-width:767px) {
+    display: none;
+  }
+}
+
+.trade-network__item {
+  font-family: $font-main;
+  text-align: right;
+  color: $text-light-color;
+
+  &:not(:last-child) {
+    @media screen and(min-width:$tablet) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and(min-width:$desctop) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.trade-network__info {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+
+  @media screen and(min-width:$desctop) {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+
+.trade-network__accent {
+  display: block;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.21;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $text-simple-dark-color;
+
+  @media screen and(min-width:$desctop) {
+    font-size: 46px;
+    line-height: 1.17;
+  }
+}
+
+.picture-wrapper {
+  @media screen and (max-width: 767px) {
+    max-width: 320px;
+    height: 240px;
+    position: relative;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 700px;
+    // height: 240px;
+    // position: relative;
+  }
+}
+
+.hero__picture-main {
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  @media screen and(max-width:767px) {
+    left: 9%;
+    bottom: -18.5%;
+  }
+
+  @media screen and(min-width:$tablet) {
+    bottom: -17%;
+    left: 48%;
+  }
+
+  @media screen and(min-width:$desctop) {
+    bottom: -16.3%;
+    left: 48%;
+  }
+}
+
+.hero__picture-dots {
+  position: absolute;
+  z-index: 2;
+
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.product-deck {
+  position: relative;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    margin-top: 28px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    gap: 16px;
+    margin-top: 40px;
+  }
+}
+
+.hero__picture-second {
+  @media screen and (min-width: $tablet) {
+    position: relative;
+    z-index: 3;
+  }
+
+  @media screen and (min-width: $desctop) {
+    position: relative;
+    z-index: 3;
+  }
+}
+
+.info-wrapper {
+  @media screen and (min-width: $tablet) {
+    height: 152px;
+    padding-top: 20px;
+  }
+  @media screen and (min-width: $desctop) {
+    padding-top: 30px;
+  }
+}
+
+.hero__info {
+  margin-bottom: 15px;
+  @media screen and (min-width: $tablet) {
+    width: 151px;
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.42;
+
+    color: $text-light-color;
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: 200px;
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+
+    color: $text-light-color;
+  }
+}
+
+.hero__link {
+  // outline: 2px dotted tomato;
+  display: block;
+  padding: 5px 0;
+  height: 16px;
+  width: 41px;
+
+  background-image: url(../images/svgs/Arrow_1_w.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:hover {
+    width: 51px;
+    background-image: url(../images/svgs/Arrow_2_w.svg);
+  }
+  &:focus {
+    width: 51px;
+    height: 24px;
+    background-image: url(../images/svgs/Arrow_3_w.svg);
+  }
+}

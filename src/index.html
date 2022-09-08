@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,13 +13,28 @@
     />
 
     <!-- SLICK-THEME -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
 
     <!-- STYLES -->
     <link rel="stylesheet" href="./sass/index.scss" />
+
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
   </head>
 
   <body>
     <include src="./partials/header.html"></include>
+    <include src="./partials/mobile-menu.html"></include>
 
     <main>
       <include src="./partials/hero.html"></include>
@@ -32,6 +47,11 @@
     </main>
 
     <include src="./partials/footer.html"></include>
+
+    <a href="#home" title="Вгору" class="topbutton">
+      <svg class="top__image">
+        <use href="./images/icons.svg#totop" class="top__icon"></use></svg
+    ></a>
 
     <!-- МОДАЛЬНІ ВІКНА -->
     <include src="./partials/modal-buy.html"></include>
@@ -48,10 +68,23 @@
       type="text/javascript"
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
+
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+
+    <script>
+      $('.reviewer-slider').slick({
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+      });
+    </script>
+
     <script>
       $('.slider').slick({
         slidesToShow: 3,

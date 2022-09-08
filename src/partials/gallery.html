@@ -1,3 +1,36 @@
-<section class="section">
-  <div class="container"></div>
+<section class="section section__gallery">
+  <div class="container gallery">
+    <h2 class="hidden">gallery</h2>
+    <picture>
+      <source
+        srcset="
+          ./images/desctop/gallery01-1x-min.jpg 1x,
+          ./images/desctop/gallery01-2x-min.jpg 2x,
+          ./images/desctop/gallery01-3x-min.jpg 3x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/tablet/gallery01-1x-min.jpg 1x,
+          ./images/tablet/gallery01-2x-min.jpg 2x,
+          ./images/tablet/gallery01-3x-min.jpg 3x
+        "
+        media="(min-width: 768px)"
+      />
+      <img
+        srcset="
+          ./images/mobile/gallery01-1x-min.jpg 1x,
+          ./images/mobile/gallery01-2x-min.jpg 2x,
+          ./images/mobile/gallery01-3x-min.jpg 3x
+        "
+        src="./images/mobile/gallery01-1x-min.jpg"
+        width="1013"
+        height="422"
+        alt="image"
+        loading="lazy"
+        class="gallery__img"
+      />
+    </picture>
+  </div>
 </section>
