@@ -1,0 +1,124 @@
+//-----------------------modal-window---------------------------------------------------------------//
+
+// .backdrop {
+
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 3;
+//     background-color: rgba(0, 0, 0, 0.5);
+//     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     @media screen and (min-width: 320px) and (max-width: (1200px - 1px)) {
+//         display: none;
+//         width: 450px;
+
+//     }
+
+// }
+
+// .backdrop.is-hidden {
+//     opacity: 0;
+//     visibility: hidden;
+//     pointer-events: none;
+// }
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.85);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 40px);
+  max-width: 280px;
+  padding: 28px;
+
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+
+  background-color: $text-light-color;
+
+  transform: translate(-50%, -50%);
+  // transition: transform var(--transition);
+
+  @media screen and (min-width: $tablet) {
+    padding: 32px 60px;
+    max-width: 568px;
+  }
+}
+
+.modal__btn {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // width: 16px;
+  // height: 16px;
+  // border-radius: 50%;
+  background-color: transparent;
+  border: none;
+}
+
+.modal__close {
+  width: 16px;
+  height: 16px;
+  scale: (1);
+  transition: scale $transition;
+
+  .modal__btn:hover &,
+  .modal__btn:focus & {
+    scale: (1.5);
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.video {
+  margin-bottom: 20px;
+  // width: 224px;
+  // height: 200px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
+  }
+}
+
+.modal__title {
+  margin-bottom: 20px;
+
+  font-family: $font-title;
+
+  font-size: 16px;
+  line-height: 1.5;
+
+  text-align: center;
+
+  color: $text-dark-color;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
+  }
+}
+
+.modal__text {
+  font-family: $font-main;
+  font-size: 14px;
+  line-height: 1.428571428571429;
+
+  color: $text-dark-color;
+}

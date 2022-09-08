@@ -1,0 +1,164 @@
+.modal-franchise {
+  padding: 28px 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: auto;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 2px solid $brand-second-color;
+  border-radius: 10px;
+
+  @media screen and(max-width:320px) {
+    width: 95%;
+    max-width: 320px;
+  }
+  @media screen and(min-width:321px) and (max-width: 767px) {
+    width: 320px;
+  }
+  @media screen and(min-width:$tablet) {
+    padding: 32px 60px;
+    width: 568px;
+  }
+}
+
+.modal-franchise__close-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+  border: 0;
+  padding: 0px;
+  background-color: transparent;
+
+  @media screen and(min-width: $tablet) {
+    top: 20px;
+    right: 20px;
+  }
+}
+.modal-franchise__icon {
+  width: 16px;
+  height: 16px;
+  scale: (1);
+  transition: scale $transition;
+
+  @media screen and(min-width: $tablet) {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:focus,
+  &:hover {
+    scale: (1.5);
+  }
+}
+.modal-franchise__title {
+  font-family: $font-title;
+  @include font(400, 16px, 24px, 0.04em);
+  text-align: center;
+  max-width: 322px;
+  margin: 0 auto 24px;
+
+  @media screen and (min-width: $tablet) {
+    @include font(400, 20px, 28px, 0.04em);
+    width: 100%;
+    margin: 0 auto 24px;
+  }
+}
+.modal-franchise__desc {
+  @include font(400, 14px, 20px, 0.04em);
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $tablet) {
+    @include font(400, 16px, 22px, 0.04em);
+    margin-bottom: 32px;
+  }
+}
+
+.label-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  @media screen and(min-width:$tablet) {
+    margin: 0 auto;
+    row-gap: 16px;
+    width: 368px;
+  }
+}
+
+.franchise-form__label:not(:last-child) {
+  @media screen and(max-width:$mobile) {
+    // margin-bottom: 0px;
+  }
+  //   margin-bottom: 16px;
+  //   width: 100%;
+}
+.franchise-form__input {
+  cursor: pointer;
+  width: 100%;
+  height: 42px;
+  border: 1px solid $brand-main-color;
+  border-radius: 10px;
+  transition: border-color $transition;
+  @include font(400, 14px, 20px, 0.04em);
+  padding: 11px 16px;
+  &::placeholder {
+    @include font(400, 14px, 20px, 0.04em);
+    color: $text-simple-dark-color;
+  }
+  &:focus,
+  &:hover {
+    border-color: #f8d24e;
+    outline: none;
+  }
+}
+
+.franchise-form__message {
+  display: block;
+  resize: none;
+  width: 100%;
+  height: 84px;
+  padding: 11px 16px;
+  border: 1px solid $brand-main-color;
+  border-radius: 10px;
+  @include font(400, 14px, 20px, 0.04em);
+  cursor: pointer;
+  transition: border-color $transition;
+  &::placeholder {
+    @include font(400, 14px, 20px, 0.04em);
+    color: $text-simple-dark-color;
+  }
+  &:focus,
+  &:hover {
+    border-color: #f8d24e;
+    outline: none;
+  }
+}
+
+.franchise-form__submit {
+  display: flex;
+  margin: 24px auto 0;
+  padding: 7px 43px;
+  border: none;
+  background-color: $brand-second-color;
+  border-radius: 10px;
+  color: inherit;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color $transition, color $transition;
+  @include font(600, 14px, 17px, 0.04em);
+
+  @media screen and(min-width:$tablet) {
+    margin: 32px auto 0;
+    padding: 12px 43px;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: $brand-main-color;
+    color: #fff;
+  }
+}
