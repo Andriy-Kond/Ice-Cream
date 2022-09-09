@@ -29,22 +29,10 @@
         </ul>
       </nav>
 
-      <button type="button" class="btn-mobile-open" data-menu-open>
-        <picture>
-          <source
-            srcset="
-              ./images/svgs/Burger-1x.png 1x,
-              ./images/svgs/Burger-2x.png 2x,
-              ./images/svgs/Burger-3x.png 3x
-            "
-            media="(max-width: 1199px)"
-          />
-          <img
-            src="./images/svgs/Burger-1x.png"
-            alt="open menu"
-            class="btn-mobile-open__icon"
-          />
-        </picture>
+      <button type="button" class="menu-burger" data-menu-open>
+        <svg class="menu-burger__icon">
+          <use href="./images/icons.svg#menu-burger"></use>
+        </svg>
       </button>
 
       <button

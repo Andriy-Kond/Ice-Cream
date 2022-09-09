@@ -1,25 +1,26 @@
 /* === LOGO === */
 .logo {
-    z-index: 10;
+  z-index: 10;
 }
 
 .logo__image {
-    width: 40px;
-    height: 37px;
+  width: 40px;
+  height: 37px;
+  fill: $brand-second-color;
 }
 
 @media screen and (min-width: $tablet) {
-    .logo__image {
-        width: 48px;
-        height: 44px;
-    }
+  .logo__image {
+    width: 48px;
+    height: 44px;
+  }
 }
 
 @media screen and (min-width: $desctop) {
-    .logo__image {
-        width: 55px;
-        height: 60px;
-    }
+  .logo__image {
+    width: 55px;
+    height: 60px;
+  }
 }
 
 /* === /LOGO === */

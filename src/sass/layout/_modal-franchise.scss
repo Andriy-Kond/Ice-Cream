@@ -22,38 +22,6 @@
   }
 }
 
-.modal-franchise__close-btn {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 8px;
-  right: 8px;
-  border: 0;
-  padding: 0px;
-  background-color: transparent;
-
-  @media screen and(min-width: $tablet) {
-    top: 20px;
-    right: 20px;
-  }
-}
-.modal-franchise__icon {
-  width: 16px;
-  height: 16px;
-  scale: (1);
-  transition: scale $transition;
-
-  @media screen and(min-width: $tablet) {
-    width: 20px;
-    height: 20px;
-  }
-
-  &:focus,
-  &:hover {
-    scale: (1.5);
-  }
-}
 .modal-franchise__title {
   font-family: $font-title;
   @include font(400, 16px, 24px, 0.04em);

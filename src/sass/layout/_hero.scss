@@ -3,9 +3,6 @@
 
   width: 100%;
   padding-top: 61px;
-
-  // padding-left: 20px;
-  // padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 
@@ -21,9 +18,6 @@
 
   @media screen and(min-width:$tablet) {
     width: 768px;
-    // padding-left: 32px;
-    // padding-right: 32px;
-
     padding-top: 28px;
     padding-bottom: 13px;
   }
@@ -354,23 +348,22 @@
 }
 
 .hero__link {
-  // outline: 2px dotted tomato;
   display: block;
   padding: 5px 0;
   height: 16px;
   width: 41px;
 
-  background-image: url(../images/svgs/Arrow_1_w.svg);
+  background-image: url(../images/svgs/arrow-default.svg);
   background-repeat: no-repeat;
   background-size: cover;
 
   &:hover {
     width: 51px;
-    background-image: url(../images/svgs/Arrow_2_w.svg);
+    background-image: url(../images/svgs/arrow-hover.svg);
   }
   &:focus {
     width: 51px;
     height: 24px;
-    background-image: url(../images/svgs/Arrow_3_w.svg);
+    background-image: url(../images/svgs/arrow-focus.svg);
   }
 }

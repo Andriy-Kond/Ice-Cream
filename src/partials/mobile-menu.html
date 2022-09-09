@@ -34,22 +34,11 @@
     >
       Buy now&nbsp;&nbsp;&nbsp;&nbsp;&#x276F;
     </button>
-    <button type="button" class="btn-mobile-close" data-menu-close>
-      <picture>
-        <source
-          srcset="
-            ./images/svgs/btn-mobile-close-1x.png 1x,
-            ./images/svgs/btn-mobile-close-2x.png 2x,
-            ./images/svgs/btn-mobile-close-3x.png 3x
-          "
-          media="(max-width: 1199px)"
-        />
-        <img
-          src="./images/svgs/btn-mobile-close-1x.png"
-          alt="close menu"
-          class="btn-mobile-close__icon"
-        />
-      </picture>
+
+    <button type="button" class="menu-close" data-menu-close>
+      <svg class="menu-close__icon">
+        <use href="./images/icons.svg#menu-close"></use>
+      </svg>
     </button>
   </div>
 </div>
