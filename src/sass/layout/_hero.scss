@@ -1,33 +1,21 @@
 .hero {
   position: relative;
+  padding-top: 60px;
 
-  width: 100%;
-  padding-top: 61px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: ($tablet - 1px)) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  @media screen and (min-width: $mobile) {
-    width: 480px;
-    margin: 0 auto;
-  }
 
   @media screen and(min-width:$tablet) {
-    width: 768px;
-    padding-top: 28px;
+    padding-top: 40px;
     padding-bottom: 13px;
   }
 
   @media screen and(min-width:$desctop) {
-    width: 1200px;
-    padding-top: 40px;
+    padding-top: 45px;
     padding-bottom: 58px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
 
@@ -256,7 +244,7 @@
 
 .hero__picture-main {
   position: absolute;
-  z-index: 3;
+  // z-index: 3;
   pointer-events: none;
   @media screen and(max-width:767px) {
     left: 9%;
@@ -276,10 +264,10 @@
 
 .hero__picture-dots {
   position: absolute;
-  z-index: 2;
+  // z-index: 2;
 
   bottom: 0;
-  left: 0;
+
   pointer-events: none;
 }
 
@@ -305,13 +293,42 @@
 .hero__picture-second {
   @media screen and (min-width: $tablet) {
     position: relative;
-    z-index: 3;
+    // z-index: 3;
   }
 
   @media screen and (min-width: $desctop) {
     position: relative;
-    z-index: 3;
+    // z-index: 3;
   }
+
+  // transition: animation 4000ms linear;
+  transition: transform 20000ms linear;
+}
+
+// Анімація - обертання тарліки з морозивом
+// .hero__picture-second:focus,
+// .hero__picture-second:hover {
+//   animation-name: spin;
+//   animation-duration: 3s;
+//   animation-timing-function: linear;
+//   animation-iteration-count: infinite;
+//   animation-fill-mode: both;
+
+//   @keyframes spin {
+//     0% {
+//       transform: rotate(0deg);
+//     }
+
+//     100% {
+//       transform: rotate(360deg);
+//     }
+//   }
+// }
+
+// або:
+.hero__picture-second:focus,
+.hero__picture-second:hover {
+  transform: rotate(10turn);
 }
 
 .info-wrapper {

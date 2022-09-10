@@ -9,6 +9,8 @@
   border: 2px solid $brand-second-color;
   border-radius: 10px;
 
+  max-height: calc(100vh - 30px);
+
   @media screen and(max-width:320px) {
     width: 95%;
     max-width: 320px;
@@ -209,7 +211,7 @@
   border-radius: 50%;
   top: 15px;
   left: 50%;
-  z-index: 2;
+  // z-index: 20;
   transform: translate(-50%, -61%);
 }
 

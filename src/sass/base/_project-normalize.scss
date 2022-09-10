@@ -1,51 +1,60 @@
 /* ========== СКИДАННЯ СТИЛІВ ==========  */
 body {
-    font-family: $font-main;
-    background-color: $brand-main-color;
-    color: $text-simple-dark-color;
+  font-family: $font-main;
+  background-color: $brand-main-color;
+  color: $text-simple-dark-color;
+  //   padding-top: 54px;
+
+  //   @media screen and (min-width: $tablet) {
+  //     padding-top: 70px;
+  //   }
+
+  //   @media screen and (min-width: $desctop) {
+  //     padding-top: 94px;
+  //   }
 }
 
 body.modal-open {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 h1,
 h2,
 h3,
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Знімає стилізацію з ul */
 ul,
 ol {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /* Знімає стилізацію з <a> */
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Заборона зміну розміру в textarea */
 textarea {
-    resize: none;
+  resize: none;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 
-    // не дозволяє кнопці вилазити за межі батька
-    box-sizing: border-box;
+  // не дозволяє кнопці вилазити за межі батька
+  box-sizing: border-box;
 }
 
 /* ========== /СКИДАННЯ СТИЛІВ ========== */

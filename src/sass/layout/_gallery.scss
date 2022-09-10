@@ -1,42 +1,36 @@
-.gallery__img {
-  width: 320px;
-  border-radius: 7px;
-  overflow: hidden;
-
-  transform: translate(-50%, 0);
-
-  @media screen and (min-width: 768px) {
-    width: 704px;
-    border-radius: 18px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1013px;
-    border-radius: 24px;
-  }
-}
-
-.section__gallery {
-  background-image: url('../images/mobile/mobile-bg-fourth-screen-1x-min.jpg');
+.bg-two-sections {
+  background-image: linear-gradient(
+      to bottom,
+      $brand-main-color 24px,
+      #fff 24px,
+      #fff 130px,
+      $trasparent-color 130px
+    ),
+    url('../images/mobile/mobile-bg-fourth-screen-1x-min.jpg');
   background-size: cover;
-  position: relative;
+  background-position: bottom;
+  background-repeat: no-repeat;
 
-  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-    screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     background-image: url('../images/mobile/mobile-bg-fourth-screen-2x-min.jpg');
   }
 
-  @media screen and (min-device-pixel-ratio: 3) and (max-width: 767px),
-    screen and (min-resolution: 288dpi) and (max-width: 767px),
-    screen and (min-resolution: 3dppx) and (max-width: 767px) {
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
     background-image: url('../images/mobile/mobile-bg-fourth-screen-3x-min.jpg');
   }
 
+  // tablet
   @media screen and (min-width: 768px) {
-    background-image: url('../images/tablet/tablet-bg-fourth-screen-1x-min.jpg');
-    background-size: cover;
-    position: relative;
+    background-image: linear-gradient(
+        to bottom,
+        $brand-main-color 164px,
+        $trasparent-color 164px
+      ),
+      url('../images/tablet/tablet-bg-fourth-screen-1x-min.jpg');
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -51,10 +45,14 @@
     background-image: url('../images/tablet/tablet-bg-fourth-screen-3x-min.jpg');
   }
 
+  // desctop
   @media screen and (min-width: 1200px) {
-    background-image: url('../images/desctop/desc-bg-fourth-screen-1x-min.jpg');
-    background-size: cover;
-    position: relative;
+    background-image: linear-gradient(
+        to bottom,
+        $brand-main-color 93px,
+        $trasparent-color 93px
+      ),
+      url('../images/desctop/desc-bg-fourth-screen-1x-min.jpg');
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
@@ -67,5 +65,23 @@
     screen and (min-resolution: 288dpi) and (min-width: 1200px),
     screen and (min-resolution: 3dppx) and (min-width: 1200px) {
     background-image: url('../images/desctop/desc-bg-fourth-screen-3x-min.jpg');
+  }
+}
+
+.gallery-box {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery {
+  border-radius: 7px;
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    border-radius: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    border-radius: 24px;
   }
 }

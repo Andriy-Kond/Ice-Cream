@@ -1,8 +1,36 @@
+.container__header {
+  position: relative;
+}
+
 .header {
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  left: 0;
   display: flex;
   padding-top: 12px;
   align-items: center;
-  justify-content: space-between;
+
+  // повторюються властивості контейнар, бо сам контейнер не спрацьовує навіть з position:relative;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  // /повторюються властивості контейнар, бо сам контейнер не спрацьовує навіть з position:relative;
 
   @media screen and (min-width: $tablet) {
     justify-content: flex-start;

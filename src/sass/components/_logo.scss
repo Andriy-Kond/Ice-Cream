@@ -1,25 +1,27 @@
 /* === LOGO === */
 .logo {
-  z-index: 10;
+  // z-index: 10;
 }
 
 .logo__image {
   width: 40px;
   height: 37px;
   fill: $brand-second-color;
-}
+  transition: scale $transition;
 
-@media screen and (min-width: $tablet) {
-  .logo__image {
+  @media screen and (min-width: $tablet) {
     width: 48px;
     height: 44px;
   }
-}
 
-@media screen and (min-width: $desctop) {
-  .logo__image {
+  @media screen and (min-width: $desctop) {
     width: 55px;
     height: 60px;
+  }
+
+  &:hover,
+  &:focus {
+    scale: 1.3;
   }
 }
 

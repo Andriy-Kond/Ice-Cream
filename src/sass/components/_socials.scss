@@ -4,7 +4,6 @@
   width: 32px;
   height: 32px;
   color: $brand-main-color;
-  scale: 1;
 
   transition: color $transition;
   &:hover {
@@ -13,7 +12,7 @@
 
   &:focus {
     color: $text-light-color;
-    scale: 1.5;
+    scale: 1.3;
   }
 }
 
