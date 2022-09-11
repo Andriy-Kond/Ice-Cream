@@ -67,8 +67,6 @@
 }
 
 .menu__item {
-  cursor: pointer;
-
   &:not(:last-child) {
     margin-right: 27px;
   }

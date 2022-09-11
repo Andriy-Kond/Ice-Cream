@@ -125,8 +125,9 @@
 
 .img-wrapper {
   margin-top: 32px;
+  width: 100%;
+  max-width: 280px;
 
-  width: 280px;
   height: 300px;
   position: relative;
   align-items: center;
@@ -141,8 +142,9 @@
   border-radius: 140.182px;
 
   @media screen and (min-width: $tablet) {
-    width: 336px;
+    max-width: 336px;
     height: 355px;
+
     margin-top: 40px;
 
     position: absolute;
@@ -157,11 +159,11 @@
   }
 
   @media screen and (min-width: $desctop) {
-    width: 490px;
+    max-width: 490px;
     height: 529px;
+
     margin-top: 82px;
 
-    position: absolute;
     background: linear-gradient(
         0deg,
         rgba(248, 210, 78, 0.7),

@@ -116,8 +116,6 @@
   border: 2px solid $brand-second-color;
   border-radius: 8px;
 
-  cursor: pointer;
-
   @media screen and(min-width:$desctop) {
     width: 134px;
     height: 42px;
@@ -155,7 +153,6 @@
 
   color: $brand-second-color;
 
-  cursor: pointer;
   text-decoration-line: underline;
 
   @media screen and(min-width:$desctop) {
@@ -244,7 +241,7 @@
 
 .hero__picture-main {
   position: absolute;
-  // z-index: 3;
+  z-index: 3;
   pointer-events: none;
   @media screen and(max-width:767px) {
     left: 9%;

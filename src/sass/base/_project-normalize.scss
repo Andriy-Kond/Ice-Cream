@@ -3,15 +3,8 @@ body {
   font-family: $font-main;
   background-color: $brand-main-color;
   color: $text-simple-dark-color;
-  //   padding-top: 54px;
 
-  //   @media screen and (min-width: $tablet) {
-  //     padding-top: 70px;
-  //   }
-
-  //   @media screen and (min-width: $desctop) {
-  //     padding-top: 94px;
-  //   }
+  cursor: url(../images/cursor-def.png), default;
 }
 
 body.modal-open {

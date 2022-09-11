@@ -46,10 +46,11 @@
 .reviewers__text {
   display: flex;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   overflow: auto;
 
-  width: 280px;
+  // width: 100%;
+  max-width: 280px;
   height: 256px;
   padding: 34px 39px;
   background-color: $brand-main-color;
@@ -62,7 +63,7 @@
   color: $text-light-color;
 
   @media screen and (min-width: $tablet) {
-    width: 705px;
+    max-width: 705px;
     height: 138px;
     padding: 28px 80px;
     border-radius: 24px;
@@ -74,7 +75,7 @@
   }
 
   @media screen and (min-width: $desctop) {
-    width: 968px;
+    max-width: 968px;
     padding: 39px 80px;
 
     font-size: 16px;

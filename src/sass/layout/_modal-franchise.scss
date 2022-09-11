@@ -64,7 +64,6 @@
   //   width: 100%;
 }
 .franchise-form__input {
-  cursor: pointer;
   width: 100%;
   height: 42px;
   border: 1px solid $brand-main-color;
@@ -92,7 +91,7 @@
   border: 1px solid $brand-main-color;
   border-radius: 10px;
   @include font(400, 14px, 20px, 0.04em);
-  cursor: pointer;
+
   transition: border-color $transition;
   &::placeholder {
     @include font(400, 14px, 20px, 0.04em);
@@ -115,7 +114,7 @@
   color: inherit;
   align-items: center;
   text-align: center;
-  cursor: pointer;
+
   transition: background-color $transition, color $transition;
   @include font(600, 14px, 17px, 0.04em);
 
