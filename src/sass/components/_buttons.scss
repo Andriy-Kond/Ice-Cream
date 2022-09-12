@@ -4,6 +4,11 @@
 
 // КНОПКА З ЗАЛИВКОЮ (buy now)
 .btn-filled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
   width: 152px;
   height: 42px;
   padding: 12px;
@@ -11,9 +16,6 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.285714285714286;
-
-  align-items: center;
-  text-align: center;
 
   border-radius: 10px;
   background: $brand-second-color;
@@ -57,16 +59,19 @@
 
 // КНОПКА З ОБВОДКОЮ (products)
 .btn-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
   width: 134px;
   height: 42px;
-  padding: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
 
   font-weight: 600;
   font-size: 14px;
   line-height: 1.285714285714286;
-
-  align-items: center;
-  text-align: center;
 
   background: transparent;
   color: $text-simple-dark-color;
@@ -97,15 +102,28 @@
 
 // Модифікатор для кнопки Products у $tablet та $mobile
 .btn-border--small {
-  width: 62px;
-  height: 24px;
-  padding: 7px;
+  @media screen and (max-width: ($desctop - 1)) {
+    width: 62px;
+    height: 24px;
+    padding-left: 7px;
+    padding-right: 7px;
 
-  border-radius: 8px;
+    border-radius: 8px;
+
+    @include font(600, 8, 10);
+    text-align: center;
+    justify-content: center;
+    color: $text-color;
+  }
 }
 
 // КНОПКА БЕЗ ОБВОДКИ ТА ЗАЛИВКИ ("How it’s made?" у $desctop)
 .btn-underline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
   width: 152px;
   height: 42px;
   padding: 12px;
@@ -113,9 +131,6 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.285714285714286;
-
-  align-items: center;
-  text-align: center;
 
   background: transparent;
   color: $brand-second-color;
@@ -138,9 +153,52 @@
 
 // Модифікатор "How it’s made?" у $tablet та $mobile
 .btn-underline--small {
-  width: 82px;
-  height: 24px;
-  padding: 7px;
+  @media screen and (max-width: ($desctop - 1)) {
+    width: 82px;
+    height: 24px;
+    padding: 7px;
+
+    @include font(600, 8, 10);
+  }
+}
+.btn-arrow {
+  display: flex;
+
+  width: 50px;
+  height: 22px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  overflow: hidden;
+
+  align-items: center;
+  justify-content: start;
+
+  &:hover .btn-arrow__icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  &:focus .btn-arrow__icon {
+    width: 50px;
+    height: 50px;
+    stroke: black;
+  }
+
+  &:focus .btn-arrow__icon--hero {
+    stroke: white;
+  }
+}
+
+.btn-arrow__icon {
+  width: 40px;
+  height: 50px;
+  fill: $text-color;
+  transition: $transition;
+}
+
+.btn-arrow__icon--hero {
+  fill: $text-light-color;
 }
 
 .menu-burger {
@@ -161,18 +219,6 @@
   @media screen and (min-width: $desctop) {
     display: none;
   }
-
-  // &:hover {
-  //   color: $focus-color;
-  // }
-
-  // &:focus {
-  //   color: $text-light-color;
-  // }
-
-  // &:disabled {
-  //   color: $disabled-color;
-  // }
 }
 
 .menu-burger__icon {
@@ -232,30 +278,37 @@
 }
 
 // SCROLL UP
-.top__image {
+
+.topbutton {
+  z-index: 5;
   position: fixed;
   bottom: 50px;
   right: max(5px, 100vw / 20);
   width: 50px;
   height: 50px;
-  z-index: 5;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.5);
 
-  fill: $brand-second-color;
-  transition: fill $transition, background-color $transition, scale $transition;
-
-  &:hover {
-    fill: $focus-color;
+  &:hover .top__icon {
+    fill: $brand-second-color;
     background-color: rgba(0, 0, 0, 0);
     scale: 1.3;
   }
 
-  &:focus {
+  &:focus .top__icon {
     fill: $text-light-color;
     background-color: rgba(0, 0, 0, 0);
   }
+}
+
+.top__icon {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  fill: $brand-main-color;
+  transition: fill $transition, background-color $transition, scale $transition;
 }
 
 /* === /BUTTONS === */
