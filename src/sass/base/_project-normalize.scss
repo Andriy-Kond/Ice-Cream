@@ -43,8 +43,13 @@ textarea {
   resize: none;
 }
 
+a,
 button {
-  cursor: pointer;
+  cursor: url(../images/cursor-def.png), pointer;
+}
+
+button {
+  // cursor: pointer;
 
   // не дозволяє кнопці вилазити за межі батька
   box-sizing: border-box;
