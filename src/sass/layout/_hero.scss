@@ -1,6 +1,395 @@
 .section__hero {
+  position: relative;
   padding-top: 60px;
+  padding-bottom: 240px;
+
+  .container__hero {
+    position: relative;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 28px;
+    padding-bottom: 14px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    padding-top: 40px;
+    padding-bottom: 65px;
+  }
 }
+
+.hero-up {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 28px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 42px;
+  }
+}
+
+.hero-up__title {
+  margin-bottom: 28px;
+  width: 100%;
+  max-width: 250px;
+
+  font-family: $font-title;
+
+  @include font(400, 26px, 33px);
+  text-transform: uppercase;
+
+  color: $text-light-color;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
+    max-width: 185px;
+    @include font(400, 18px, 23px);
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 28px;
+    max-width: 370px;
+    @include font(400, 38px, 48px);
+  }
+}
+
+.hero-up__title--accent {
+  @include font(400, 34px, 33px);
+
+  @media screen and (min-width: $tablet) {
+    max-width: 185px;
+    @include font(400, 24px, 13px);
+  }
+
+  @media screen and (min-width: $desctop) {
+    max-width: 370px;
+    @include font(400, 38px, 48px);
+  }
+}
+
+.hero-up__btn-box {
+  display: flex;
+}
+
+.btn-border__hero-up {
+  margin-right: 8px;
+
+  @media screen and (min-width: $desctop) {
+    margin-right: 12px;
+  }
+}
+
+.shops {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+
+  @media screen and (max-width: ($tablet - 1)) {
+    display: none;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 16px;
+  }
+}
+
+.shops__qty {
+  margin-bottom: 4px;
+
+  @include font(900, 28px, 34px);
+  text-align: right;
+  text-transform: uppercase;
+  color: $text-dark-color;
+
+  @media screen and (min-width: $desctop) {
+    @include font(900, 46px, 56px);
+  }
+}
+
+.shops__type {
+  @include font(400, 8px, 10px);
+  color: $text-light-color;
+
+  @media screen and (min-width: $desctop) {
+    @include font(400, 14px, 17px);
+  }
+}
+
+.hero-down {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: ($tablet - 1)) {
+    display: none;
+  }
+}
+
+.bg-plate {
+  // position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 152px;
+  height: 152px;
+  margin-right: 30px;
+  background-size: contain;
+
+  background-position: left;
+  background-repeat: no-repeat;
+
+  transition: transform 5000ms linear;
+
+  background-image: url('../images/tablet/tablet-hero-platecrema-1x-min.png');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/tablet/tablet-hero-platecrema-2x-min.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    background-image: url('../images/tablet/tablet-hero-platecrema-3x-min.png');
+  }
+
+  // desctop
+  @media screen and (min-width: 1200px) {
+    width: 225px;
+    height: 225px;
+    margin-right: 14px;
+    background-image: url('../images/desctop/desc-hero-platecrema-1x-min.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: url('../images/desctop/desc-hero-platecrema-2x-min.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 3) and (min-width: 1200px),
+    screen and (min-resolution: 288dpi) and (min-width: 1200px),
+    screen and (min-resolution: 3dppx) and (min-width: 1200px) {
+    background-image: url('../images/desctop/desc-hero-platecrema-3x-min.png');
+  }
+}
+
+.bg-plate:focus,
+.bg-plate:hover {
+  transform: rotate(3turn);
+}
+
+.hero-down__text {
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 10px;
+
+  @include font(400, 12, 17);
+  color: $text-light-color;
+
+  @media screen and (min-width: $desctop) {
+    max-width: 200px;
+    margin-bottom: 20px;
+
+    @include font(400, 14, 20);
+  }
+}
+
+.bg-points {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  // width: 100%;
+  // height: 50px;
+
+  background-image: url('../images/mobile/mobile-hero-conecrema-1x-min.png'),
+    url('../images/mobile/mobile-points-1x-min.png');
+  background-size: contain, contain;
+  background-position: center, center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  max-width: 320px;
+  height: 300px;
+  margin: auto;
+
+  background-position: bottom left 50%, bottom left 50%;
+  background-repeat: no-repeat;
+  background-size: contain, contain;
+  //   height: 250px;
+
+  // background-position: center 14px;
+
+  // tablet
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/tablet/tablet-hero-conecrema-1x-min.png'),
+      url('../images/tablet/tablet-points-1x-min.png');
+    background-position: right 40px bottom, bottom;
+    max-width: 768px;
+    height: 376px;
+  }
+
+  // desctop
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/desctop/desc-hero-conecrema-1x-min.png'),
+      url('../images/desctop/desc-points-1x-min.png');
+    background-position: right -26px bottom, bottom;
+    max-width: 1200px;
+    height: 690px;
+  }
+}
+
+//   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+//     screen and (min-resolution: 192dpi) and (max-width: 767px),
+//     screen and (min-resolution: 2dppx) and (max-width: 767px) {
+//     background-image: url('../images/mobile/mobile-points-2x-min.png');
+//   }
+
+//   @media screen and (min-device-pixel-ratio: 3) and (max-width: 767px),
+//     screen and (min-resolution: 288dpi) and (max-width: 767px),
+//     screen and (min-resolution: 3dppx) and (max-width: 767px) {
+//     background-image: url('../images/mobile/mobile-points-3x-min.png');
+//   }
+
+//   // tablet
+//   @media screen and (min-width: 768px) {
+//     // width: 768px;
+//     height: 67px;
+//     // bottom: -14px;
+//     background-image: url('../images/tablet/tablet-points-1x-min.png');
+//   }
+
+//   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+//     screen and (min-resolution: 192dpi) and (min-width: 768px),
+//     screen and (min-resolution: 2dppx) and (min-width: 768px) {
+//     background-image: url('../images/tablet/tablet-points-2x-min.png');
+//   }
+
+//   @media screen and (min-device-pixel-ratio: 3) and (min-width: 768px),
+//     screen and (min-resolution: 288dpi) and (min-width: 768px),
+//     screen and (min-resolution: 3dppx) and (min-width: 768px) {
+//     background-image: url('../images/tablet/tablet-points-3x-min.png');
+//   }
+
+//   // desctop
+//   @media screen and (min-width: 1200px) {
+//     // width: 1200px;
+//     height: 384px;
+//     // bottom: -65px;
+//     background-image: url('../images/desctop/desc-points-1x-min.png');
+//   }
+
+//   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+//     screen and (min-resolution: 192dpi) and (min-width: 1200px),
+//     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+//     background-image: url('../images/desctop/desc-points-2x-min.png');
+//   }
+
+//   @media screen and (min-device-pixel-ratio: 3) and (min-width: 1200px),
+//     screen and (min-resolution: 288dpi) and (min-width: 1200px),
+//     screen and (min-resolution: 3dppx) and (min-width: 1200px) {
+//     background-image: url('../images/desctop/desc-points-3x-min.png');
+//   }
+// }
+
+// .bg-cone {
+//   position: absolute;
+//   bottom: 0;
+//   left: 50%;
+//   transform: translate(-50%, 0);
+
+//   width: 100%;
+//   height: 250px;
+//   background-size: contain;
+//   background-position: center;
+
+//   background-image: url('../images/mobile/mobile-hero-conecrema-1x-min.png');
+//   background-position: bottom;
+//   background-repeat: no-repeat;
+
+//   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+//     screen and (min-resolution: 192dpi) and (max-width: 767px),
+//     screen and (min-resolution: 2dppx) and (max-width: 767px) {
+//     background-image: url('../images/mobile/mobile-hero-conecrema-2x-min.png');
+//   }
+
+//   @media screen and (min-device-pixel-ratio: 3) and (max-width: 767px),
+//     screen and (min-resolution: 288dpi) and (max-width: 767px),
+//     screen and (min-resolution: 3dppx) and (max-width: 767px) {
+//     background-image: url('../images/mobile/mobile-hero-conecrema-3x-min.png');
+//   }
+
+//   // tablet
+//   @media screen and (min-width: 768px) {
+//     // width: 257px;
+//     height: 380px;
+//     // right: 80px;
+//     background-position: right 100px bottom 0;
+
+//     // bottom: -14px;
+//     // right: 0px;
+//     // left: auto;
+//     // transform: translate(-80px, 0px);
+
+//     background-image: url('../images/tablet/tablet-hero-conecrema-1x-min.png');
+//   }
+
+//   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+//     screen and (min-resolution: 192dpi) and (min-width: 768px),
+//     screen and (min-resolution: 2dppx) and (min-width: 768px) {
+//     background-image: url('../images/tablet/tablet-hero-conecrema-2x-min.png');
+//   }
+
+//   @media screen and (min-device-pixel-ratio: 3) and (min-width: 768px),
+//     screen and (min-resolution: 288dpi) and (min-width: 768px),
+//     screen and (min-resolution: 3dppx) and (min-width: 768px) {
+//     background-image: url('../images/tablet/tablet-hero-conecrema-3x-min.png');
+//   }
+
+//   // desctop
+//   @media screen and (min-width: 1200px) {
+//     // width: 484px;
+//     height: 670px;
+//     background-position: right 124px bottom 0;
+//     // left: 280px;
+//     // bottom: -65px;
+//     background-image: url('../images/desctop/desc-hero-conecrema-1x-min.png');
+//   }
+
+//   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+//     screen and (min-resolution: 192dpi) and (min-width: 1200px),
+//     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+//     background-image: url('../images/desctop/desc-hero-conecrema-2x-min.png');
+//   }
+
+//   @media screen and (min-device-pixel-ratio: 3) and (min-width: 1200px),
+//     screen and (min-resolution: 288dpi) and (min-width: 1200px),
+//     screen and (min-resolution: 3dppx) and (min-width: 1200px) {
+//     background-image: url('../images/desctop/desc-hero-conecrema-3x-min.png');
+//   }
+// }
+
+// .bg-cone-bg {
+//   position: absolute;
+//   background-size: contain;
+//   background-image: url('../images/tablet/bg.png');
+//   width: 270px;
+//   height: 343px;
+//   bottom: -14px;
+//   right: 0px;
+//   left: auto;
+//   transform: translate(-80px, 0px);
+// }
 
 // .hero {
 //   position: relative;
