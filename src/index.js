@@ -1,5 +1,5 @@
 // Переводимо скріп у суворий режим:
-"use strict";
+// "use strict";
 // далі пишемо код
 
 import './js/mobile-menu';
