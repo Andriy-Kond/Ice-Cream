@@ -12,7 +12,8 @@
   max-height: calc(100vh - 30px);
 
   @media screen and(max-width:320px) {
-    width: 95%;
+    width: calc(100vw - 30px);
+
     max-width: 320px;
   }
   @media screen and(min-width:321px) and (max-width: 767px) {

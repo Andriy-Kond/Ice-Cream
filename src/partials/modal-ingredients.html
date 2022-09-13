@@ -1,0 +1,99 @@
+<div class="backdrop is-hidden" data-modal-ingredients>
+  <div class="ingredients__container">
+    <h2 class="modal__title">Chololate icecream</h2>
+
+    <div class="ingredients__box-img">
+      <div class="ingredients__img"></div>
+    </div>
+
+    <table class="ingredients-table">
+      <thead>
+        <tr class="ingredients-table__header">
+          <td colspan="2">Ingredients</td>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class="ingredients-table__row">
+          <td>Milk</td>
+          <td>100ml</td>
+        </tr>
+        <tr class="ingredients-table__row">
+          <td>Belgian chocolate</td>
+          <td>20g</td>
+        </tr>
+        <tr class="ingredients-table__row">
+          <td>Cream</td>
+          <td>150ml</td>
+        </tr>
+        <tr class="ingredients-table__row">
+          <td>Cocoa powder</td>
+          <td>30g</td>
+        </tr>
+        <tr class="ingredients-table__row">
+          <td>Sugar</td>
+          <td>40g</td>
+        </tr>
+        <tr class="ingredients-table__row">
+          <td>Vanilla sugar</td>
+          <td>10g</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <form action="" class="ingredients-form">
+      <ul class="ingredients-form__list">
+        <li class="ingredients-form__item">
+          <label>
+            <input
+              type="text"
+              name="user_name"
+              class="ingredients-form__input"
+              required
+              pattern="[a-zA-Zа-яА-ЯїЇіІ]+$"
+              minlength="2"
+              placeholder="Name"
+            />
+          </label>
+        </li>
+
+        <li class="ingredients-form__item">
+          <label>
+            <input
+              type="tel"
+              name="user_phone_number"
+              class="ingredients-form__input"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx"
+              placeholder="Phone"
+            />
+          </label>
+        </li>
+
+        <li class="ingredients-form__item">
+          <label>
+            <textarea
+              name="user__message"
+              class="ingredients-form__input ingredients-form__input--textarea"
+              placeholder="Comment"
+            ></textarea>
+          </label>
+        </li>
+      </ul>
+
+      <button
+        type="submit"
+        class="btn-filled btn-filled--thin btn-filled__ingridients"
+      >
+        Submit
+      </button>
+    </form>
+
+    <button type="button" class="menu-close" data-modal-ingredients-close>
+      <svg class="menu-close__icon">
+        <use href="./images/icons.svg#menu-close"></use>
+      </svg>
+    </button>
+  </div>
+</div>
