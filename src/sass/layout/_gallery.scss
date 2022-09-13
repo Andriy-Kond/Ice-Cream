@@ -49,8 +49,8 @@
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
         to bottom,
-        $brand-main-color 93px,
-        $trasparent-color 93px
+        $brand-main-color 92px,
+        $trasparent-color 92px
       ),
       url('../images/desctop/desc-bg-fourth-screen-1x-min.jpg');
   }
@@ -68,12 +68,19 @@
   }
 }
 
-.gallery-box {
-  display: flex;
-  justify-content: center;
-}
+// .gallery-box {
+//   display: flex;
+//   justify-content: center;
+// }
 
 .gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery__img {
   border-radius: 7px;
   overflow: hidden;
 

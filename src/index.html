@@ -1,10 +1,6 @@
-<!-- todo Тарілка з морозивом крутиться 
-
--->
 <!-- todo Закріпити верхнє меню -->
 <!-- todo Додаткове виділення (тіні) кнопок при фокусі/ховері і без них -->
 <!-- todo Мукаюча корова при піднятті вверх -->
-<!-- todo Курсор як на макеті -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -54,8 +50,7 @@
       <include src="./partials/about.html"></include>
       <include src="./partials/advantages.html"></include>
 
-      <include src="./partials/gallery.html"></include>
-      <include src="./partials/reviews.html"></include>
+      <include src="./partials/gallery-reviews.html"></include>
       <include src="./partials/contacts.html"></include>
     </main>
 
@@ -92,19 +87,33 @@
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 1500,
+        autoplay: true,
+        autoplaySpeed: 2000,
         arrows: false,
       });
     </script>
 
-    <script>
-      $('.slider').slick({
-        slidesToShow: 3,
+    <!-- <script>
+      $('.gallery-slider').slick({
+        dots: true,
+        slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
-        dots: true,
+        autoplaySpeed: 2500,
+        arrows: false,
+      });
+    </script> -->
+
+    <script>
+      $('.gallery-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 1500,
+        fade: true,
+        cssEase: 'cubic-bezier(.38,.55,.14,.8)',
+        autoplay: true,
+        autoplaySpeed: 1300,
+        arrows: false,
       });
     </script>
 
