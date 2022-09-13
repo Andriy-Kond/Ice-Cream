@@ -65,3 +65,26 @@
     refs.modal.classList.toggle("is-hidden");
   }
 })();
+
+
+(() => {
+  const refs = {
+    openModalBtn1: document.querySelector("[data-modal-ingredients1-open]"),
+    openModalBtn2: document.querySelector("[data-modal-ingredients2-open]"),
+    openModalBtn3: document.querySelector("[data-modal-ingredients3-open]"),
+    
+    closeModalBtn: document.querySelector("[data-modal-ingredients-close]"),
+    modal: document.querySelector("[data-modal-ingredients]"),
+  };
+
+  refs.openModalBtn1.addEventListener("click", toggleModal);
+  refs.openModalBtn2.addEventListener("click", toggleModal);
+  refs.openModalBtn3.addEventListener("click", toggleModal);
+
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    document.body.classList.toggle("modal-open");
+    refs.modal.classList.toggle("is-hidden");
+  }
+})();

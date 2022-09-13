@@ -5,18 +5,19 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-    screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     background-image: url('../images/mobile/mobile-bg-second-screen-2x-min.jpg');
   }
 
-  @media screen and (min-device-pixel-ratio: 3) and (max-width: 767px),
-    screen and (min-resolution: 288dpi) and (max-width: 767px),
-    screen and (min-resolution: 3dppx) and (max-width: 767px) {
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
     background-image: url('../images/mobile/mobile-bg-second-screen-3x-min.jpg');
   }
 
+  // tablet
   @media screen and (min-width: 768px) {
     padding-bottom: 82px;
     background-image: url('../images/tablet/tablet-bg-fourth-screen-1x-min.jpg');
@@ -34,6 +35,7 @@
     background-image: url('../images/tablet/tablet-bg-fourth-screen-3x-min.jpg');
   }
 
+  // desctop
   @media screen and (min-width: 1200px) {
     background-image: url('../images/desctop/desc-bg-fourth-screen-1x-min.jpg');
     padding-bottom: 66px;
