@@ -18,4 +18,20 @@
   }
 }
 
+.section__sub-title {
+  text-align: center;
+  text-transform: uppercase;
+
+  @include font(800, 18px, 22px);
+  color: $text-dark-color;
+
+  @media screen and (min-width: $tablet) {
+    @include font(800, 22px, 27px);
+  }
+
+  @media screen and (min-width: $desctop) {
+    @include font(800, 30px, 37px);
+  }
+}
+
 /* === /SECTION === */

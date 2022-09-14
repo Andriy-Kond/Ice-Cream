@@ -62,24 +62,11 @@
   }
 }
 
-.poducts__title {
+.section__sub-title--products-position {
   padding-bottom: 12px;
-  text-align: center;
-  text-transform: uppercase;
-
-  @include font(800, 18px, 22px);
-  color: $text-dark-color;
-
-  @media screen and (min-width: $tablet) {
-    @include font(800, 22px, 27px);
-  }
-
-  @media screen and (min-width: $desctop) {
-    @include font(800, 30px, 37px);
-  }
 }
 
-.section__title--products-margin {
+.section__title--products-position {
   margin-bottom: 148px;
 
   @media screen and (min-width: $tablet) {
