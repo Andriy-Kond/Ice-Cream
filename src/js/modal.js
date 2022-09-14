@@ -72,6 +72,7 @@
     openModalBtn1: document.querySelector("[data-modal-ingredients1-open]"),
     openModalBtn2: document.querySelector("[data-modal-ingredients2-open]"),
     openModalBtn3: document.querySelector("[data-modal-ingredients3-open]"),
+    openModalBtn4: document.querySelector("[data-modal-ingredients4-open]"),
     
     closeModalBtn: document.querySelector("[data-modal-ingredients-close]"),
     modal: document.querySelector("[data-modal-ingredients]"),
@@ -80,6 +81,7 @@
   refs.openModalBtn1.addEventListener("click", toggleModal);
   refs.openModalBtn2.addEventListener("click", toggleModal);
   refs.openModalBtn3.addEventListener("click", toggleModal);
+  refs.openModalBtn4.addEventListener("click", toggleModal);
 
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
