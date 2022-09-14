@@ -3,5 +3,19 @@
 //     padding-top: 200px;
 //     padding-bottom: 200px;
 // }
+.section__title {
+  text-align: center;
+  font-family: $font-title;
+  @include font(400, 30px, 38px);
+  color: $text-dark-color;
+
+  @media screen and (min-width: $tablet) {
+    @include font(400, 34px, 43px);
+  }
+
+  @media screen and (min-width: $desctop) {
+    @include font(400, 36px, 44px);
+  }
+}
 
 /* === /SECTION === */

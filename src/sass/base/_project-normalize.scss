@@ -52,7 +52,7 @@ button {
   // cursor: pointer;
 
   // не дозволяє кнопці вилазити за межі батька
-  box-sizing: border-box;
+  // box-sizing: border-box; - вже вказано у modern-normalize
 }
 
 /* ========== /СКИДАННЯ СТИЛІВ ========== */
