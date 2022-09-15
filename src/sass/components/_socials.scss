@@ -1,4 +1,14 @@
 /* === SOCIALS === */
+.socials {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+}
+
+.socials__item {
+  // display: flex;
+}
+
 .socials__link {
   display: flex;
   width: 32px;
