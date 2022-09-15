@@ -68,49 +68,6 @@
     <include src="./partials/modal-locations.html"></include>
     <include src="./partials/modal-franchise.html"></include>
 
-    <!-- СЛІКЕР -->
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-
-    <script>
-      $('.reviewer-slider').slick({
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: false,
-      });
-    </script>
-
-    <script>
-      $('.gallery-slider').slick({
-        dots: false,
-        infinite: true,
-        speed: 1500,
-        fade: true,
-        cssEase: 'cubic-bezier(.38,.55,.14,.8)',
-        autoplay: true,
-        autoplaySpeed: 1300,
-        arrows: false,
-      });
-    </script>
-
-    <!-- SCRIPTS -->
-    <!-- type="module" автоматично підключає суваорий режим -->
-    <script type="module" src="./index.js"></script>
-
-    <!-- <script src="./js/modal.js"></script> -->
+    <include src="./partials/scripts.html"></include>
   </body>
 </html>

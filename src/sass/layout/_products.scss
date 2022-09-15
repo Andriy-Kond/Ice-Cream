@@ -369,7 +369,7 @@
 
   text-transform: uppercase;
   color: #131313;
-  color: $text-color;
+  color: $text-dark-color;
   @include font(700, 20px, 24px);
 
   @media screen and (min-width: $tablet) {
@@ -385,7 +385,7 @@
   margin-bottom: auto;
 
   @include font(400, 14px, 25px);
-  color: $text-color;
+  color: $text-dark-color;
 
   @media screen and (min-width: $desctop) {
     @include font(400, 16px, 28px);

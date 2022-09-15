@@ -73,7 +73,7 @@
   padding: 11px 16px;
   &::placeholder {
     @include font(400, 14px, 20px, 0.04em);
-    color: $text-simple-dark-color;
+    color: $text-dark-color;
   }
   &:focus,
   &:hover {
@@ -95,7 +95,7 @@
   transition: border-color $transition;
   &::placeholder {
     @include font(400, 14px, 20px, 0.04em);
-    color: $text-simple-dark-color;
+    color: $text-dark-color;
   }
   &:focus,
   &:hover {
