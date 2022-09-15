@@ -71,6 +71,7 @@
 .gallery {
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .gallery__img {
