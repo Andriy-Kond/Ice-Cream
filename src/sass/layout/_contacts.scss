@@ -61,7 +61,7 @@
   @media screen and (min-width: $tablet) {
     flex-basis: calc((100% - 40px) / 3);
     padding: 40px 24px;
-    max-width: 224x;
+    max-width: 224px;
   }
 
   @media screen and (min-width: $desctop) {
@@ -208,22 +208,23 @@
 
 .contacts-btn-box {
   display: flex;
-  flex-direction: column;
+
   gap: 16;
   justify-content: center;
   align-items: center;
 
   padding-top: 962px;
-  padding-bottom: 38px;
+
+  @media screen and (max-width: ($tablet - 1px)) {
+    flex-direction: column;
+  }
 
   @media screen and (min-width: $tablet) {
     flex-wrap: nowrap;
     padding-top: 284px;
-    padding-bottom: 40px;
   }
 
   @media screen and (min-width: $desctop) {
     padding-top: 506px;
-    padding-bottom: 120px;
   }
 }
