@@ -3,7 +3,7 @@
   padding-bottom: 60px;
   text-align: center;
 
-  @media screen and (min-width: $tablet) and (max-width: ($desctop - 1px)) {
+  @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
     padding-bottom: 82px;
   }
 
@@ -43,22 +43,22 @@
     background-image: url('../images/tablet/tablet-bg-second-screen-3x-min.jpg');
   }
 
-  // desctop
+  // desktop
   @media screen and (min-width: 1200px) {
-    background-image: url('../images/desctop/desc-bg-second-screen-1x-min.jpg');
+    background-image: url('../images/desktop/desk-bg-second-screen-1x-min.jpg');
     padding-bottom: 66px;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
     screen and (min-resolution: 192dpi) and (min-width: 1200px),
     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-    background-image: url('../images/desctop/desc-bg-second-screen-2x-min.jpg');
+    background-image: url('../images/desktop/desk-bg-second-screen-2x-min.jpg');
   }
 
   @media screen and (min-device-pixel-ratio: 3) and (min-width: 1200px),
     screen and (min-resolution: 288dpi) and (min-width: 1200px),
     screen and (min-resolution: 3dppx) and (min-width: 1200px) {
-    background-image: url('../images/desctop/desc-bg-second-screen-3x-min.jpg');
+    background-image: url('../images/desktop/desk-bg-second-screen-3x-min.jpg');
   }
 }
 
@@ -73,7 +73,7 @@
     margin-bottom: 200px;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 303px;
   }
 }
@@ -92,7 +92,7 @@
     gap: 16px;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     gap: 32px;
   }
 }
@@ -136,7 +136,7 @@
     border-radius: 16px;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     max-width: 370px;
     height: 536px;
 
@@ -211,19 +211,19 @@
     }
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     top: -182px;
 
     width: 300px;
     height: 316px;
 
-    background-image: url('../images/desctop/desc-products01-1x-min.png'),
+    background-image: url('../images/desktop/desk-products01-1x-min.png'),
       linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/desctop/desc-products01-2x-min.png'),
+      background-image: url('../images/desktop/desk-products01-2x-min.png'),
         linear-gradient(
           0deg,
           rgba(156, 190, 143, 0.7),
@@ -234,7 +234,7 @@
     @media screen and (min-device-pixel-ratio: 3),
       screen and (min-resolution: 288dpi),
       screen and (min-resolution: 3dppx) {
-      background-image: url('../images/desctop/desc-products01-3x-min.png'),
+      background-image: url('../images/desktop/desk-products01-3x-min.png'),
         linear-gradient(
           0deg,
           rgba(156, 190, 143, 0.7),
@@ -283,22 +283,22 @@
     }
   }
 
-  // desctop
-  @media screen and (min-width: $desctop) {
-    background-image: url('../images/desctop/desc-products02-1x-min.png'),
+  // desktop
+  @media screen and (min-width: $desktop) {
+    background-image: url('../images/desktop/desk-products02-1x-min.png'),
       linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/desctop/desc-products02-2x-min.png'),
+      background-image: url('../images/desktop/desk-products02-2x-min.png'),
         linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
     }
 
     @media screen and (min-device-pixel-ratio: 3),
       screen and (min-resolution: 288dpi),
       screen and (min-resolution: 3dppx) {
-      background-image: url('../images/desctop/desc-products02-3x-min.png'),
+      background-image: url('../images/desktop/desk-products02-3x-min.png'),
         linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
     }
   }
@@ -343,22 +343,22 @@
     }
   }
 
-  // desctop
-  @media screen and (min-width: $desctop) {
-    background-image: url('../images/desctop/desc-products03-1x-min.png'),
+  // desktop
+  @media screen and (min-width: $desktop) {
+    background-image: url('../images/desktop/desk-products03-1x-min.png'),
       linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/desctop/desc-products03-2x-min.png'),
+      background-image: url('../images/desktop/desk-products03-2x-min.png'),
         linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
     }
 
     @media screen and (min-device-pixel-ratio: 3),
       screen and (min-resolution: 288dpi),
       screen and (min-resolution: 3dppx) {
-      background-image: url('../images/desctop/desc-products03-3x-min.png'),
+      background-image: url('../images/desktop/desk-products03-3x-min.png'),
         linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
     }
   }
@@ -376,7 +376,7 @@
     @include font(700, 22px, 27px);
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     @include font(700, 30px, 37px);
   }
 }
@@ -387,7 +387,7 @@
   @include font(400, 14px, 25px);
   color: $text-dark-color;
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     @include font(400, 16px, 28px);
   }
 }

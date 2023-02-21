@@ -45,26 +45,26 @@
     background-image: url('../images/tablet/tablet-bg-fourth-screen-3x-min.jpg');
   }
 
-  // desctop
+  // desktop
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
         to bottom,
         $brand-main-color 92px,
         $trasparent-color 92px
       ),
-      url('../images/desctop/desc-bg-fourth-screen-1x-min.jpg');
+      url('../images/desktop/desk-bg-fourth-screen-1x-min.jpg');
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
     screen and (min-resolution: 192dpi) and (min-width: 1200px),
     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-    background-image: url('../images/desctop/desc-bg-fourth-screen-2x-min.jpg');
+    background-image: url('../images/desktop/desk-bg-fourth-screen-2x-min.jpg');
   }
 
   @media screen and (min-device-pixel-ratio: 3) and (min-width: 1200px),
     screen and (min-resolution: 288dpi) and (min-width: 1200px),
     screen and (min-resolution: 3dppx) and (min-width: 1200px) {
-    background-image: url('../images/desctop/desc-bg-fourth-screen-3x-min.jpg');
+    background-image: url('../images/desktop/desk-bg-fourth-screen-3x-min.jpg');
   }
 }
 

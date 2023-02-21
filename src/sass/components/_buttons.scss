@@ -101,7 +101,7 @@
 
 // Модифікатор для кнопки Products у $tablet та $mobile
 .btn-border--small {
-  @media screen and (max-width: ($desctop - 1)) {
+  @media screen and (max-width: ($desktop - 1)) {
     width: 62px;
     height: 24px;
     padding-left: 7px;
@@ -116,7 +116,7 @@
   }
 }
 
-// КНОПКА БЕЗ ОБВОДКИ ТА ЗАЛИВКИ ("How it’s made?" у $desctop)
+// КНОПКА БЕЗ ОБВОДКИ ТА ЗАЛИВКИ ("How it’s made?" у $desktop)
 .btn-underline {
   display: flex;
   justify-content: center;
@@ -152,7 +152,7 @@
 
 // Модифікатор "How it’s made?" у $tablet та $mobile
 .btn-underline--small {
-  @media screen and (max-width: ($desctop - 1)) {
+  @media screen and (max-width: ($desktop - 1)) {
     width: 82px;
     height: 24px;
     padding: 7px;
@@ -215,7 +215,7 @@
   color: $text-light-color;
   border: 0;
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     display: none;
   }
 }

@@ -6,7 +6,7 @@
     padding-top: 48px;
     padding-bottom: 40px;
   }
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     padding-top: 50px;
     padding-bottom: 88px;
   }
@@ -38,7 +38,7 @@
     max-width: 616px;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     max-width: 1084px;
   }
 }
@@ -57,7 +57,7 @@
     margin-bottom: 16px;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     @include font(700, 58px, 71px);
     margin-bottom: 12px;
   }
@@ -73,7 +73,7 @@
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     @include font(400, 16px, 28px);
   }
 }
@@ -87,7 +87,7 @@
   @media screen and (min-width: $tablet) {
     margin-bottom: 32px;
   }
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 40px;
   }
 }

@@ -13,7 +13,7 @@
     @include font(400, 34px, 43px);
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     @include font(400, 36px, 44px);
   }
 }
@@ -29,7 +29,7 @@
     @include font(800, 22px, 27px);
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     @include font(800, 30px, 37px);
   }
 }
