@@ -6,7 +6,7 @@
     // margin-bottom: 40px;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     // margin-bottom: 120px;
   }
 }
@@ -26,7 +26,7 @@
     top: -304px;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     top: -96px;
   }
 }
@@ -48,7 +48,7 @@
     // margin-bottom: 60px;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     gap: 32px;
     // margin-bottom: 64px;
   }
@@ -72,7 +72,7 @@
     max-width: 224px;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     flex-basis: calc((100% - 64px) / 3);
     padding: 40px 40px;
     max-width: 368px;
@@ -119,7 +119,7 @@
     @include font(500, 14px, 26px);
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 8px;
     @include font(500, 16px, 30px);
   }
@@ -169,7 +169,7 @@
     @include font(500, 14px, 26px);
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     @include font(500, 16px, 30px);
   }
 }
@@ -182,7 +182,7 @@
     @include font(500, 14px, 26px);
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     @include font(500, 16px, 30px);
   }
 }
@@ -194,7 +194,7 @@
     height: 52px;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     height: 58px;
   }
 }
@@ -212,7 +212,7 @@
     @include font(500, 14px, 26px);
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     height: 29px;
     @include font(500, 16px, 30px);
   }
@@ -236,7 +236,7 @@
     padding-top: 284px;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     padding-top: 506px;
   }
 }

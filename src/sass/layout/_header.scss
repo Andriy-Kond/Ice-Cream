@@ -24,7 +24,7 @@
     // padding-right: 32px;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     max-width: 1200px;
     // padding-left: 16px;
     // padding-right: 16px;
@@ -37,7 +37,7 @@
     padding-top: 20px;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     padding-top: 28px;
   }
 }
@@ -49,7 +49,7 @@
     display: none;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     margin-left: auto;
   }
 }
@@ -60,7 +60,7 @@
   padding: 12px 0;
 }
 
-@media screen and (max-width: ($desctop - 1)) {
+@media screen and (max-width: ($desktop - 1)) {
   .menu {
     display: none;
   }

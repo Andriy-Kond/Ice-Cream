@@ -25,3 +25,24 @@ $transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 $border-color: #e1e1e1;
 /* ========== /VARIABLES ========== */
+
+// Мапа кольорів:
+// _colors.scss
+// $colors: (
+//   'primary': #8e3329,
+//   'accent': #d98328,
+//   'secondary': #5a1321,
+//   'foreground': #191919,
+//   'background': #e9e9e9,
+// );
+// @function getColor($key) {
+//   @return map-get($colors, $key); // map-get - функція для доступу до мапи кольорів
+// }
+
+// Після імпорту файлу _colors.scss можна використовувати функцію getColor(ім'я_властивості).
+// main.scss
+// @import 'шлях/до/colors';
+// .button {
+//   color: getColor('primary');
+//   background-color: getColor('background');
+// }

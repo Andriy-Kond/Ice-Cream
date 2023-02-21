@@ -10,10 +10,10 @@
 //     background-image: url('../images/tablet/tablet-bg-fourth-screen-1x-min.jpg');
 //   }
 
-//   @media screen and (min-width: $desctop) {
+//   @media screen and (min-width: $desktop) {
 //     padding-top: 480px;
 //     padding-bottom: 200px;
-//     background-image: url('../images/desctop/desc-bg-fourth-screen-1x-min.jpg');
+//     background-image: url('../images/desktop/desk-bg-fourth-screen-1x-min.jpg');
 //   }
 // }
 
@@ -26,7 +26,7 @@
     padding-bottom: 414px;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     margin-top: 128px;
     padding-bottom: 207px;
   }
@@ -74,7 +74,7 @@
     letter-spacing: 0.04em;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     max-width: 968px;
     padding: 39px 80px;
 
@@ -102,7 +102,7 @@
     line-height: 1.875;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     height: 30px;
   }
 }

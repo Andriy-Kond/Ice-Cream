@@ -1,7 +1,7 @@
 .about {
   padding-top: 60px;
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     padding-bottom: 60px;
   }
 }
@@ -31,7 +31,7 @@
     max-width: inherit;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 82px;
   }
 }
@@ -45,7 +45,7 @@
     align-items: center;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     align-items: center;
   }
 }
@@ -70,7 +70,7 @@
     box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     width: 500px;
     height: 500px;
     margin-bottom: 40px;
@@ -95,7 +95,7 @@
   @media screen and (min-width: $tablet) {
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     top: 40px;
   }
 }
@@ -110,7 +110,7 @@
     margin-bottom: auto;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     max-width: 464px;
     margin-bottom: 48px;
   }
@@ -128,7 +128,7 @@
   @media screen and (min-width: $tablet) {
     text-align: start;
   }
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     @include font(400, 16px, 28px);
   }
 }
@@ -140,7 +140,7 @@
 }
 
 .about__wrapper-second {
-  @media screen and (min-width: $tablet) and (max-width: ($desctop - 1px)) {
+  @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
     display: flex;
     flex-direction: column;
     // align-items: center;
@@ -196,7 +196,7 @@
 //     line-height: 1.227272727272727;
 //   }
 
-//   @media screen and (min-width: $desctop) {
+//   @media screen and (min-width: $desktop) {
 //     font-size: 30px;
 //     line-height: 1.233333333333333;
 //   }
@@ -221,7 +221,7 @@
 //     letter-spacing: 0.06em;
 //   }
 
-//   @media screen and (min-width: $desctop) {
+//   @media screen and (min-width: $desktop) {
 //     font-size: 36px;
 //     line-height: 1.25;
 //   }
@@ -245,7 +245,7 @@
 //     margin-left: 368px;
 //   }
 
-//   @media screen and (min-width: $desctop) {
+//   @media screen and (min-width: $desktop) {
 //     margin-top: 172px;
 //     margin-left: 599px;
 //     width: 463px;
@@ -287,7 +287,7 @@
 //     border-radius: 250px;
 //   }
 
-//   @media screen and (min-width: $desctop) {
+//   @media screen and (min-width: $desktop) {
 //     max-width: 490px;
 //     height: 529px;
 
@@ -339,7 +339,7 @@
 //     text-align: start;
 //   }
 
-//   @media screen and (min-width: $desctop) {
+//   @media screen and (min-width: $desktop) {
 //     // margin-bottom: 8px;
 //     font-size: 16px;
 //   }
@@ -359,7 +359,7 @@
 //     text-align: start;
 //   }
 
-//   @media screen and (min-width: $desctop) {
+//   @media screen and (min-width: $desktop) {
 //     font-size: 16px;
 //   }
 // }
