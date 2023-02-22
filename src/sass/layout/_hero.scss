@@ -131,6 +131,22 @@
   }
 }
 
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+    // background-color: teal;
+  }
+
+  50% {
+    // background-color: orange;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    // background-color: deepskyblue;
+  }
+}
+
 .bg-plate {
   // position: absolute;
   bottom: 0;
@@ -143,6 +159,7 @@
   background-position: left;
   background-repeat: no-repeat;
 
+  // animation-play-state: paused;
   transition: transform 5000ms linear;
   cursor: url(../images/cursor-def.png), pointer;
 
@@ -184,6 +201,13 @@
 .bg-plate:focus,
 .bg-plate:hover {
   transform: rotate(3turn);
+
+  // animation-name: rotating;
+  // animation-duration: 1500ms;
+  // animation-timing-function: linear;
+  // animation-iteration-count: infinite;
+  // // animation-play-state: running;
+  // animation-fill-mode: forwards;
 }
 
 .hero-down__text {
