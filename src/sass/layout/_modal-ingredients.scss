@@ -65,21 +65,21 @@
 
   background-repeat: no-repeat;
   background-position: right top 0px, left bottom 0px;
-  background-image: url('../images/Ingridients/shokolade-crema-1x.png'),
+  background-image: url('../images/ingredients/shokolade-crema-1x.png'),
     linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/Ingridients/shokolade-crema-2x.png'),
+    background-image: url('../images/ingredients/shokolade-crema-2x.png'),
       linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
   }
 
   @media screen and (min-device-pixel-ratio: 3),
     screen and (min-resolution: 288dpi),
     screen and (min-resolution: 3dppx) {
-    background-image: url('../images/Ingridients/shokolade-crema-3x.png'),
+    background-image: url('../images/ingredients/shokolade-crema-3x.png'),
       linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
   }
 }
@@ -254,7 +254,7 @@
   resize: none;
 }
 
-.btn-filled__ingridients {
+.btn-filled__ingredients {
   margin-top: 32px;
   margin-left: auto;
   margin-right: auto;

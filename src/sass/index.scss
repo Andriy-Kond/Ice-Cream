@@ -1,16 +1,16 @@
 // todo автофокус на полі у модалці - через JS
 // todo закріпити хедер при прокрутці
 
-// Змінні
+// Variables // Змінні
 @import './utils/variables';
 @import './utils/breakpoints';
 @import './utils/mixin';
 
-// Нормалізація стилів
+// Styles normalization // Нормалізація стилів
 @import './base/modern-normalize';
 @import './base/project-normalize';
 
-// Загальні компоненти
+// Common components // Загальні компоненти
 @import './components/hidden';
 @import './components/buttons';
 @import './components/container';
@@ -19,11 +19,11 @@
 @import './components/socials';
 @import './components/backdrop';
 
-// Капелюх
+// Header // Капелюх
 @import './layout/header';
 @import './layout/mobile-menu';
 
-// Головна сторінка
+// Main page // Головна сторінка
 @import './layout/hero';
 
 @import './layout/products';
@@ -33,10 +33,10 @@
 @import './layout/reviews';
 @import './layout/contacts';
 
-// Нижній колонтитул
+// Footer // Нижній колонтитул
 @import './layout/footer';
 
-// Модальні вікна
+// Modal windows // Модальні вікна
 @import './layout/modal-buy';
 @import './layout/modal-ingredients';
 @import './layout/modal-made';

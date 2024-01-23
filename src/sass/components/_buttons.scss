@@ -1,8 +1,8 @@
 /* === BUTTONS === */
-// В кнопках змінюються розміри в залежності від вьюпорту.
-// Перевіряти і змінювати розміри через додатковий клас-модифікатор (--)
+// In buttons their dimensions changes depending on viewport // В кнопках змінюються розміри в залежності від вьюпорту.
+// Check and change dimensions by using additional class-modifier (--) // Перевіряти і змінювати розміри через додатковий клас-модифікатор (--)
 
-// КНОПКА З ЗАЛИВКОЮ (buy now)
+// BUTTON WITH FILL ("Buy Now") // КНОПКА З ЗАЛИВКОЮ ("Buy Now")
 .btn-filled {
   display: flex;
   justify-content: center;
@@ -38,17 +38,17 @@
   }
 }
 
-// Модифікатор кнопки "Read more"
+// Button modifier "Read More" // Модифікатор кнопки "Read More"
 .btn-filled--middle {
   width: 164px;
 }
 
-// Модифікатор кнопки "Our Locations"
+// Button modifier "Our Locations" // Модифікатор кнопки "Our Locations"
 .btn-filled--big {
   width: 196px;
 }
 
-// Модифікатор кнопок "submit" модальних вікон
+// Button modifier "submit" in modal windows // Модифікатор кнопок "submit" модальних вікон
 .btn-filled--thin {
   width: 132px;
   @media screen and (min-width: $tablet) {
@@ -56,7 +56,7 @@
   }
 }
 
-// КНОПКА З ОБВОДКОЮ (products)
+// BUTTON WITH OUTLINE // КНОПКА З КОНТУРОМ (products)
 .btn-border {
   display: flex;
   justify-content: center;
@@ -94,12 +94,12 @@
   }
 }
 
-// Модифікатор для кнопки Franchise
+// Modifier of Button "Franchise"  // Модифікатор для кнопки Franchise
 .btn-border--big {
   width: 196px;
 }
 
-// Модифікатор для кнопки Products у $tablet та $mobile
+// Modifier for button "Products" in $tablet and $mobile // Модифікатор для кнопки Products у $tablet та $mobile
 .btn-border--small {
   @media screen and (max-width: ($desktop - 1)) {
     width: 62px;
@@ -116,7 +116,7 @@
   }
 }
 
-// КНОПКА БЕЗ ОБВОДКИ ТА ЗАЛИВКИ ("How it’s made?" у $desktop)
+//  BUTTON WITHOUT OUTLINE AND LAYOUT ("How it's made?" in $desktop) //  КНОПКА БЕЗ ОБВОДКИ ТА ЗАЛИВКИ ("How it’s made?" у $desktop)
 .btn-underline {
   display: flex;
   justify-content: center;
@@ -150,7 +150,7 @@
   }
 }
 
-// Модифікатор "How it’s made?" у $tablet та $mobile
+// Modifier "How it's made?" in $tablet and $desktop // Модифікатор "How it’s made?" у $tablet та $mobile
 .btn-underline--small {
   @media screen and (max-width: ($desktop - 1)) {
     width: 82px;
@@ -271,7 +271,6 @@
 }
 
 // SCROLL UP
-
 .topbutton {
   z-index: 5;
   position: fixed;

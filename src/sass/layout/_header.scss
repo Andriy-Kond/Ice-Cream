@@ -11,7 +11,8 @@
   padding-top: 12px;
   align-items: center;
 
-  // повторюються властивості контейнар, бо сам контейнер не спрацьовує навіть з position:relative;
+  // necessary duplicate container's properties, because the container doesn't word even with "position:relative"
+  // повторюються властивості контейнеру, бо сам контейнер не спрацьовує навіть з position:relative;
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
@@ -30,7 +31,8 @@
     // padding-right: 16px;
   }
 
-  // /повторюються властивості контейнар, бо сам контейнер не спрацьовує навіть з position:relative;
+  // necessary duplicate container's properties, because the container doesn't work even with "position: relative"
+  // повторюються властивості контейнар, бо сам контейнер не спрацьовує навіть з position:relative;
 
   @media screen and (min-width: $tablet) {
     justify-content: flex-start;
